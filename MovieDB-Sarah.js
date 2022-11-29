@@ -23,3 +23,15 @@ function showMovies(data) {
         movieE1.innerHTML = "paste from index, see 30:00 on YT video"
     })
 }
+
+function getColor(vote) {
+    if (vote >= 8) {
+        return 'green'
+    }
+    else if (vote >= 5) {
+        return 'orange'
+    }
+    else {
+        return 'red'
+    }
+}
