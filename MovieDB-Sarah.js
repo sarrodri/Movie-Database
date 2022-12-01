@@ -1,8 +1,12 @@
 // API
 
-const API_KEY = " ";
-const BAS_URL = " ";
-const API_URL = BAS_URL + " " + API_KEY;
+const API_KEY = "api_key=30c8e528e46a869b675943f2be82e205";
+const BAS_URL = "https://api.themoviedb.org/3/";
+const API_URL = BAS_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
+const IMG_URL = " "
+
+const main = MovieApp.getElementById('main')
+const form = MovieApp.getElementById('form');
 
 getMovies(API_URL);
 
@@ -35,3 +39,13 @@ function getColor(vote) {
         return 'red'
     }
 }
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const searchTerm = search.value;
+
+    if(searchTerm) {
+        getMovies(searchURL +'&'+searchTerm)
+    }
+})
