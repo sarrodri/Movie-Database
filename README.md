@@ -6,5 +6,7 @@ Sarah
   - began laying out the ground work for the movie app and looking into the api code for the movies.
 12/1 more api work
    - officially linked the api to the app and finalized the javascript portion of the code
+12/6
+  - got the css portion to work with JS and HTML, passed the API into the movie object.
 Dre
 11/6: finished working on the css portion 
