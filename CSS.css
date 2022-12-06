@@ -1,18 +1,7 @@
-@import url()
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
 *{
     box-sizing: border-box;
-}
-
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: hidden;
 }
 
 :root{
@@ -40,7 +29,7 @@ header{
     border-radius: 5px;
     font-size: 1rem;
     color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: inherit;
 }
 
 .search:focus{
@@ -75,6 +64,10 @@ header{
 .movie-info{
     color: #eee;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
 }
 
 .movie-info h3{
@@ -109,6 +102,7 @@ header{
     padding: 1rem;
     max-height: 100%;
     transform: translateY(-101%);
+    transition: transform;
 }
 
 .movie:hover .overview{
