@@ -6,7 +6,7 @@ const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
 const IMG_URL = "https://image.tmdb.org/t/p/w500" ;
 const searchURL = BASE_URL+'/search/movie?'+API_KEY;
 
-// const genres =[
+// const genres = [
 //     {
 //       "id": 28,
 //       "name": "Action"
@@ -87,6 +87,34 @@ const searchURL = BASE_URL+'/search/movie?'+API_KEY;
 const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
+const tagsEl = document.getElementById('tags');
+
+var selectedGenre = []
+setGenre();
+function setGenre(){
+tagsEl.innerHTML='';
+genres.forEach(genre=> {
+    const t = document.createElement('div');
+    t.classList.add('tag');
+    t.id=genre.id;
+    t.innerText = genre.name;
+    t.addEventListener('click', () => {
+      if(selectedGenre.length == 0){
+        selectedGenre.push(genre.id);
+      }else{
+        if(selectedGenre.includes(genre.id)){
+            selectedGenre.forEach((id, idx) => {
+               if(id == genre.id){
+
+               }
+            })
+        }
+      }   
+    })
+    tagsEl.append(t);
+})
+}
+
 
 getMovies(API_URL);
 

@@ -10,3 +10,5 @@ Sarah
   - got the css portion to work with JS and HTML, passed the API into the movie object.
 Dre
 11/6: finished working on the css portion 
+Kou
+12/7:Created Filter tags and clickable
