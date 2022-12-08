@@ -15,3 +15,12 @@ Dre
 11/6: finished working on the css portion 
 Kou
 12/7:Created Filter tags and clickable
+
+Garran
+helped with the HTML portion and CSS integration
+
+Caleb
+12/6
+  -started working on genres assigment
+12/8
+  -created a clear button for the genres
