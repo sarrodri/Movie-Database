@@ -15,3 +15,6 @@ Dre
 11/6: finished working on the css portion 
 Kou
 12/7:Created Filter tags and clickable
+
+Garran
+helped with the HTML portion and CSS integration
