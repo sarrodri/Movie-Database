@@ -18,3 +18,9 @@ Kou
 
 Garran
 helped with the HTML portion and CSS integration
+
+Caleb
+12/6
+  -started working on genres up till 5 minutes into video
+12/8
+  -created a clear button for the genres

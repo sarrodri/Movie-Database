@@ -124,6 +124,7 @@ function highlightSelection() {
     const tags = document.querySelectorAll('.tag');
     tags.forEach(tag =>
         tag.classList.remove('highlight'));
+    clearBtn()
     if (selectedGenre.length!=0){    
         selectedGenre.forEach(id =>{
             const highlightedTag= document.getElementById(id);
@@ -132,6 +133,24 @@ function highlightSelection() {
 
 }
 
+function cleatBtn(){
+  let clearBtn = document.getElementById('clear');
+  if(clearBtn){
+    clearBtn.classList.add('highlight')
+  }else{
+
+      let clear = document.createElement('div');
+     clear.classList.add('tag','highlight');
+      clear.id = 'clear';
+      clear.innertext = 'Clear x';
+      clear.addEventListener('click', () => {
+          selectedGenre = [];
+          setGenre();
+          getMovies(API_URL);
+    })
+  tagsEl.append(clear);
+  }
+}
 getMovies(API_URL);
 
 function getMovies(url){
