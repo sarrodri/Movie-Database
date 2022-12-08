@@ -7,7 +7,10 @@ Sarah
 12/1 more api work
    - officially linked the api to the app and finalized the javascript portion of the code
 12/6
-  - got the css portion to work with JS and HTML, passed the API into the movie object.
+  - got the css portion to work with JS and HTML
+  - passed the API into the movie object.
+12/8
+  - made the highlight function for the tags 
 Dre
 11/6: finished working on the css portion 
 Kou
