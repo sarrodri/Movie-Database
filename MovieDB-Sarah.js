@@ -174,7 +174,7 @@ function getColor(vote) {
         return 'green'
     }
     else if (vote >= 5) {
-        return 'orange'
+        return 'yellow'
     }
     else {
         return 'red'
